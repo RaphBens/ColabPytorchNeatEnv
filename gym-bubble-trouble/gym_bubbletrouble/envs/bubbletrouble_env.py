@@ -59,6 +59,7 @@ class BubbleTroubleEnv(gym.Env):
         BubbleTrouble.game_start(self.rand, False)
         BubbleTrouble.game_update(restart=False)
         self.previous_score = BubbleTrouble.score()
+        return self.extract_state()
 
     def render(self, mode='rgb_array', *args, **kwargs):
         assert mode == 'rgb_array'
