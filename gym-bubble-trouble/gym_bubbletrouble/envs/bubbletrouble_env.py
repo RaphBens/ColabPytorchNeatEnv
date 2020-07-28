@@ -56,7 +56,7 @@ class BubbleTroubleEnv(gym.Env):
 
     def reset(self):
         self.n_steps = 0
-        print("RESET)
+        print("RESET")
         BubbleTrouble.game_start(self.rand, False)
         BubbleTrouble.game_update(restart=False)
         self.previous_score = BubbleTrouble.score()
