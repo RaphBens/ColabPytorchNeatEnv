@@ -113,7 +113,8 @@ class BubbleTroubleEnv(gym.Env):
                 obj.speed[1] / WINDOWHEIGHT
             ]
 
-        return np.array([n, t, c_x, shoot] + objects_states)
+         #return np.array([n, t, c_x, shoot] + objects_states)
+         return c_x
 
     @staticmethod
     def euclidean_distance_squared(p1, p2):
